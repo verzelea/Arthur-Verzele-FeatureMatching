@@ -38,6 +38,6 @@ public class FeatureMatchingUnitTest
         var executingAssemblyPath =
             Assembly.GetExecutingAssembly().Location;
         var executingPath = Path.GetDirectoryName(executingAssemblyPath);
-        return executingPath;
+        return executingPath ?? string.Empty;
     }
 }
